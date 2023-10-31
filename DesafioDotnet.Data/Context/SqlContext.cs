@@ -1,8 +1,5 @@
 ﻿using DesafioDotnet.Business.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DesafioDotnet.Data.Context
 {
@@ -16,5 +13,12 @@ namespace DesafioDotnet.Data.Context
         public DbSet<ChaveModel> Chaves { get; set; }
         public DbSet<Pagador> Pagadores { get; set; }
         public DbSet<Recebedor> Recebedores { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(SqlContext).Assembly);
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

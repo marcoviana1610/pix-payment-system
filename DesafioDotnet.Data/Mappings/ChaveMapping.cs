@@ -4,16 +4,16 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DesafioDotnet.Data.Mappings
 {
-    public class RecebedorMapping : IEntityTypeConfiguration<Recebedor>
+    public class ChaveMapping : IEntityTypeConfiguration<ChaveModel>
     {
-        public void Configure(EntityTypeBuilder<Recebedor> builder)
+        public void Configure(EntityTypeBuilder<ChaveModel> builder)
         {
             builder.HasKey(x => x.Id);
-            builder.Property(t => t.Nome)
+            builder.Property(t => t.Descricao)
                 .IsRequired()
                 .HasColumnType("varchar(1000)");
 
-            builder.ToTable("Recebedor");
+            builder.ToTable("Chaves");
         }
     }
 }

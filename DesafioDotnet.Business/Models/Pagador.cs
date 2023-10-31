@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DesafioDotnet.Business.Models
 {
@@ -9,5 +8,7 @@ namespace DesafioDotnet.Business.Models
         public Guid Id { get; set; }
         public ChaveModel Chave { get; set; }
         public string Nome { get; set; }
+
+        public ICollection<Transacao> Transacoes { get; set; }
     }
 }

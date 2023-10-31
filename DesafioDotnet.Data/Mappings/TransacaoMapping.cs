@@ -1,10 +1,6 @@
 ﻿using DesafioDotnet.Business.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace DesafioDotnet.Data.Mappings
 {
     public class TransacaoMapping : IEntityTypeConfiguration<Transacao>
@@ -17,6 +13,15 @@ namespace DesafioDotnet.Data.Mappings
                 .IsRequired()
                 .HasColumnType("date");
 
+            builder.HasOne(p => p.Recebedor)
+                .WithMany(p => p.Transacoes)
+                .IsRequired();
+
+            builder.HasOne(p => p.Pagador)
+                .WithMany(p => p.Transacoes)
+                .IsRequired();
+
+            builder.ToTable("Transacoes");
 
         }
     }
