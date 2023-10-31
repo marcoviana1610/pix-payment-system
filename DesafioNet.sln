@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{7D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioDotnet.Business", "DesafioDotnet.Business\DesafioDotnet.Business.csproj", "{9FE71E48-EB2C-43F7-ABF3-0500F27AAF6D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{40F29B88-B0B1-40F8-8884-D5AD769D2FE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioDotnet.Data", "DesafioDotnet.Data\DesafioDotnet.Data.csproj", "{E66B992F-11A1-4D84-B2D6-FA9F35820DB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{9FE71E48-EB2C-43F7-ABF3-0500F27AAF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FE71E48-EB2C-43F7-ABF3-0500F27AAF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FE71E48-EB2C-43F7-ABF3-0500F27AAF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E66B992F-11A1-4D84-B2D6-FA9F35820DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66B992F-11A1-4D84-B2D6-FA9F35820DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66B992F-11A1-4D84-B2D6-FA9F35820DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66B992F-11A1-4D84-B2D6-FA9F35820DB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B510DE93-AC03-46E8-9728-A8E6C970A2BE} = {DCC176E0-9C95-4A6A-9456-40428B332A15}
 		{9FE71E48-EB2C-43F7-ABF3-0500F27AAF6D} = {7D0CFAF4-F488-4D4B-9E71-5FB44F622741}
+		{E66B992F-11A1-4D84-B2D6-FA9F35820DB9} = {40F29B88-B0B1-40F8-8884-D5AD769D2FE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBF1DEA7-4E93-4BB9-8E2E-03E4C57A674D}
